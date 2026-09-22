@@ -10,14 +10,14 @@ export const en: Dictionary = {
 
   hero: {
     eyebrow: "Ajin Babu · Berlin",
-    title: "I’m exploring how AI can become useful in everyday life.",
+    title: "I’m exploring how AI and data can support better business decisions.",
     description:
-      "I’m currently studying AI in Business in Berlin, and this portfolio brings together the projects, ideas, and directions shaping the way I learn.",
+      "I’m currently in my second semester of M.Sc. AI in Business at SRH University Berlin. This portfolio brings together projects where I practice AI, analytics, dashboards, and digital product thinking.",
     rotatingLines: [
-      "I keep coming back to AI in practice.",
-      "I notice products that make complexity feel clear.",
-      "Prompting is changing how I think about systems.",
-      "Data becomes more meaningful when it becomes readable.",
+      "I’m learning how AI fits into real business systems.",
+      "I’m interested in dashboards that make decisions easier.",
+      "ERP data becomes useful when it is clearly connected.",
+      "Good analytics should help people act, not just observe.",
     ],
     primaryCta: "View work",
     secondaryCta: "Contact",
@@ -29,93 +29,92 @@ export const en: Dictionary = {
 
   work: {
     eyebrow: "Selected work",
-    title: "A few projects that helped me learn in different ways.",
+    title: "Projects that connect AI, analytics, and business systems.",
     description:
-      "These projects came from coursework, experimentation, and early practice. Each one helped me understand AI, data, or digital products from a different angle.",
+      "A focused collection of projects where I practiced building, analysing, and explaining digital systems in a business context.",
     projects: [
       {
-        title: "BerlinMitte Chatbot",
-        category: "Python · Replit",
+        title: "AI Portfolio Platform",
+        category: "Next.js · FastAPI · Gemini API",
         summary:
-          "A restaurant chatbot built around simple conversations and useful interaction.",
+          "A full-stack portfolio with an AI assistant, built as a personal digital product.",
         details: [],
         outcome:
-          "This was one of the first projects that made AI feel practical to me.",
+          "This helped me understand how frontend, backend, APIs, deployment, and AI interaction connect.",
+      },
+      {
+        title: "Operations Intelligence Dashboard",
+        category: "Odoo ERP · Power BI · Supply Chain",
+        summary:
+          "An order-to-cash analytics project for inventory risk, payment visibility, and replenishment planning.",
+        details: [],
+        outcome:
+          "This helped me understand how ERP data can support operational decision-making.",
       },
       {
         title: "Coca-Cola Dashboard",
-        category: "Tableau · Analytics",
+        category: "Tableau · Business Analytics",
         summary:
-          "A dashboard project focused on operational visibility, KPIs, and clearer business reading.",
+          "A KPI dashboard focused on readable business performance and decision support.",
         details: [],
         outcome:
-          "It made me enjoy the connection between data, structure, and decision-making.",
+          "This improved my understanding of dashboard structure and KPI communication.",
       },
       {
         title: "Urban-Cycle",
-        category: "Concept · Circular Economy",
+        category: "Business Model · Circular Economy",
         summary:
-          "A concept built around repair, reuse, and extending product life through a better system.",
+          "A business model concept focused on repair, reuse, incentives, and longer product life.",
         details: [],
         outcome:
-          "It pushed me to think less in features and more in systems.",
-      },
-      {
-        title: "Nike Sense",
-        category: "Concept · Wearables",
-        summary:
-          "A concept around movement, support, and connected sports experience.",
-        details: [],
-        outcome:
-          "It connected technology with something more personal and energetic.",
+          "This pushed me to think more in systems and long-term value.",
       },
     ],
   },
 
   learningSignals: {
-  eyebrow: "Current directions",
-  title: "What I’m starting to focus on now.",
-  description:
-    "As I move into my second semester, these are the areas I’m beginning to explore more seriously.",
-
-  items: [
-    {
-      id: "ai-practice",
-      label: "AI in real systems",
-      value: "01",
-      text:
-        "I’m starting to look at how AI fits into real operations and systems, especially in areas like supply chain and decision-making.",
-    },
-    {
-      id: "llm",
-      label: "LLMs and prompting",
-      value: "02",
-      text:
-        "I’m learning how large language models behave, how prompting shapes output, and how agent-like systems can be structured.",
-    },
-    {
-      id: "data",
-      label: "Data and analysis",
-      value: "03",
-      text:
-        "Through lab work and projects, I’m working more with data, tools, and programming to understand how systems are built and evaluated.",
-    },
-    {
-      id: "strategy",
-      label: "Business and systems thinking",
-      value: "04",
-      text:
-        "I’m also learning how AI connects with strategy, transformation, and how organizations actually use these technologies.",
-    },
-    {
-      id: "ethics",
-      label: "AI ethics and governance",
-      value: "05",
-      text:
-        "I’m starting to explore the responsibility side of AI, including ethics, legal aspects, and long-term impact.",
-    },
-  ],
-},
+    eyebrow: "Current direction",
+    title: "What I’m working on in my second semester.",
+    description:
+      "These are the areas I am studying and connecting to practical projects right now.",
+    items: [
+      {
+        id: "ai-practice",
+        label: "AI in operations",
+        value: "01",
+        text:
+          "I’m learning how AI can support operations, supply chain decisions, planning, and business process visibility.",
+      },
+      {
+        id: "llm",
+        label: "LLMs and prompting",
+        value: "02",
+        text:
+          "I’m studying how large language models work, how prompts shape outputs, and how AI tools can support structured workflows.",
+      },
+      {
+        id: "data",
+        label: "AI lab and data analysis",
+        value: "03",
+        text:
+          "I’m practicing with tools, programming, and data analysis to understand how digital systems are built and evaluated.",
+      },
+      {
+        id: "strategy",
+        label: "Digital transformation",
+        value: "04",
+        text:
+          "I’m learning how AI connects with business strategy, transformation, and how organizations adopt new technologies.",
+      },
+      {
+        id: "ethics",
+        label: "AI ethics and governance",
+        value: "05",
+        text:
+          "I’m studying the responsibility side of AI, including legal, ethical, and governance questions.",
+      },
+    ],
+  },
 
   attentionMap: {
     eyebrow: "",
@@ -128,15 +127,15 @@ export const en: Dictionary = {
     eyebrow: "About",
     title: "From Wayanad to Berlin.",
     paragraphs: [
-      "I’m currently studying AI in Business at SRH University Berlin, and I’ve completed my first semester.",
-      "I’m especially interested in AI, data, digital systems, and product experiences that feel clear and thoughtful.",
-      "Outside academics, music, football, travel, and visual design matter a lot to me. They shape the way I notice rhythm, mood, movement, and detail.",
+      "I’m currently in my second semester of M.Sc. AI in Business at SRH University Berlin.",
+      "My main interest is the practical side of AI: how data, dashboards, workflows, and digital systems can help people make better decisions.",
+      "Outside academics, music, football, travel, and visual design matter a lot to me. They shape how I notice rhythm, structure, movement, and detail.",
     ],
     stats: [
       { label: "Based in", value: "Berlin" },
       { label: "Studying", value: "M.Sc. AI in Business" },
-      { label: "Interested in", value: "AI · Data · Product" },
-      { label: "Stage", value: "Early career" },
+      { label: "Current semester", value: "Second semester" },
+      { label: "Focus", value: "AI · Analytics · Business Systems" },
     ],
   },
 
@@ -156,7 +155,7 @@ export const en: Dictionary = {
 
   contact: {
     eyebrow: "Contact",
-    title: "I’m looking for a place where I can learn well and contribute thoughtfully.",
+    title: "I’m looking for opportunities where I can learn, build, and contribute carefully.",
     description:
       "If my direction connects with what you’re building, I’d be glad to hear from you.",
     emailText: "Email",

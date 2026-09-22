@@ -9,12 +9,24 @@ export default function AIAssistant({ locale }: { locale: string }) {
       : "Hi, I’m Ajin’s assistant. You can ask about my studies, projects, interests, or what I’m learning right now.";
 
   const apiBaseUrl = useMemo(() => {
-    const envUrl = process.env.NEXT_PUBLIC_API_URL?.trim();
-    if (envUrl) {
-      return envUrl.replace(/\/+$/, "");
+  const envUrl = process.env.NEXT_PUBLIC_API_URL?.trim();
+
+  if (envUrl) {
+    return envUrl.replace(/\/+$/, "");
+  }
+
+  if (typeof window !== "undefined") {
+    const isLocal =
+      window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1";
+
+    if (isLocal) {
+      return "http://127.0.0.1:8000";
     }
-    return "http://127.0.0.1:8000";
-  }, []);
+  }
+
+  return "https://ajin-portfolio-backend-65x5.onrender.com";
+}, []);
 
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<

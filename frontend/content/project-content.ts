@@ -2,67 +2,70 @@ export const projectContent = {
   en: {
     projects: [
       {
-        slug: "berlinmitte-chatbot",
-        title: "BerlinMitte Chatbot",
-        intro: "A restaurant chatbot built around simple, useful interaction.",
+        slug: "ai-portfolio-platform",
+        title: "AI Portfolio Platform",
+        intro: "A full-stack portfolio with an AI assistant, built as a personal digital product.",
         context:
-          "This project started from a practical question: how can a restaurant handle common interactions in a faster and simpler way?",
+          "I wanted my portfolio to work like a small product instead of only a static resume page.",
         role:
-          "I built a lightweight chatbot using Python and a simple web interface. My focus was not on complexity. It was on making the interaction clear and usable.",
+          "I built the frontend with Next.js and TypeScript, created a FastAPI backend, connected Gemini API, and deployed the system with Vercel and Render.",
         reflection:
-          "What stayed with me was how much easier AI became to understand once it was connected to a real situation and a real user need.",
+          "This project helped me understand how frontend, backend, APIs, deployment, and AI interaction connect in a real product.",
         story: [
-          "I wanted the experience to feel direct and simple rather than overdesigned.",
-          "This project helped me see that even a small AI system can feel meaningful when it solves a real everyday problem.",
-          "It was one of the first moments where AI started to feel practical to me instead of only theoretical.",
+          "The assistant answers questions about my studies, projects, and current direction.",
+          "The website supports English and German content for a Berlin-focused profile.",
+          "The project gave me practical experience with product structure, deployment, API connection, and AI integration.",
+        ],
+      },
+      {
+        slug: "operations-intelligence-dashboard",
+        title: "Operations Intelligence Dashboard",
+        intro:
+          "An ERP and Power BI analytics project for a sportswear order-to-cash process.",
+        context:
+          "This project simulated a sportswear company selling products across European markets while managing sales, inventory, invoices, and payments.",
+        role:
+          "I worked with the order-to-cash process, structured the business data, and designed analytics around revenue, stock risk, cash collection, and replenishment needs.",
+        reflection:
+          "The project helped me understand how ERP data becomes useful when it is connected to clear management dashboards.",
+        story: [
+          "Runner Pro had the strongest demand but reached low stock, creating a clear reorder risk.",
+          "One unpaid invoice reduced cash collection visibility and showed why finance data matters in operations.",
+          "The dashboard connected sales, inventory, payments, and simple forecast logic into one executive view.",
         ],
       },
       {
         slug: "coca-cola-dashboard",
         title: "Coca-Cola Dashboard",
-        intro: "An operations dashboard designed to make performance easier to read.",
+        intro:
+          "A Tableau dashboard designed to make business performance easier to read.",
         context:
-          "This project was built around operational visibility and KPI thinking.",
+          "This project focused on turning business data into a clearer operational dashboard for decision support.",
         role:
-          "I worked with business data, helped shape key measures, and used Tableau to turn that information into a clearer and more readable view.",
+          "I worked with KPIs, sales views, product performance, and dashboard structure in Tableau.",
         reflection:
-          "What stayed with me was how much good visualization changes the way people understand information.",
+          "It helped me see how good dashboard design can make business information easier to understand and act on.",
         story: [
-          "The project made me think more carefully about how data is presented, not just what data is shown.",
-          "It helped me enjoy the connection between structure, clarity, and decision-making.",
-          "I liked seeing how design choices inside a dashboard can affect understanding in a very practical way.",
+          "The project made me think about what a manager needs to see first.",
+          "It improved my understanding of KPI selection and dashboard readability.",
+          "It connected data visualization with business decision-making.",
         ],
       },
       {
         slug: "urban-cycle",
         title: "Urban-Cycle",
-        intro: "A circular-economy concept focused on repair, reuse, and longer product life.",
+        intro:
+          "A circular-economy concept focused on repair, reuse, incentives, and longer product life.",
         context:
-          "Urban-Cycle was less about a single feature and more about a whole system.",
+          "Urban-Cycle explored how a business model could support repair, resale, and product reuse.",
         role:
-          "The project explored repair, resale, user incentives, pricing, and how a more sustainable model could still feel practical in everyday life.",
+          "I worked on the business model, pricing logic, user incentives, and presentation structure.",
         reflection:
-          "This project pushed me to think less in isolated ideas and more in systems, incentives, and long-term value.",
+          "This project helped me think more in systems instead of only individual features.",
         story: [
-          "I liked that the concept had to connect sustainability with real behavior and practical use.",
-          "It made me think more carefully about what makes a system work over time, not just what looks good at the start.",
-          "This was one of the projects that moved my thinking closer to product systems.",
-        ],
-      },
-      {
-        slug: "nike-sense",
-        title: "Nike Sense",
-        intro: "A concept around movement, support, and connected sports experience.",
-        context:
-          "Nike Sense connected technology with something personal to me: sport.",
-        role:
-          "The idea explored how wearable systems could support movement, feedback, and performance in a more connected way.",
-        reflection:
-          "What stayed with me was the energy of the concept and how technology becomes more interesting when it connects with real human activity.",
-        story: [
-          "This project felt more personal because it connected digital ideas with movement and sports.",
-          "It helped me think about how product experiences can feel supportive instead of just technical.",
-          "I liked the balance between technology, motivation, and everyday physical experience.",
+          "The concept connected sustainability with practical customer behavior.",
+          "It helped me understand how incentives influence product adoption.",
+          "It strengthened my business model and product-thinking skills.",
         ],
       },
     ],
@@ -79,67 +82,71 @@ export const projectContent = {
   de: {
     projects: [
       {
-        slug: "berlinmitte-chatbot",
-        title: "BerlinMitte Chatbot",
-        intro: "Ein Restaurant-Chatbot für einfache und nützliche Interaktionen.",
+        slug: "ai-portfolio-platform",
+        title: "AI Portfolio Plattform",
+        intro:
+          "Ein Full-Stack Portfolio mit AI Assistant, aufgebaut wie ein persönliches digitales Produkt.",
         context:
-          "Dieses Projekt begann mit einer praktischen Frage: Wie kann ein Restaurant häufige Interaktionen schneller und einfacher bearbeiten?",
+          "Ich wollte, dass mein Portfolio wie ein kleines Produkt funktioniert und nicht nur wie eine statische Lebenslaufseite.",
         role:
-          "Ich habe einen leichten Chatbot mit Python und einer einfachen Weboberfläche gebaut. Mein Fokus lag nicht auf Komplexität, sondern auf Klarheit und Nutzbarkeit.",
+          "Ich habe das Frontend mit Next.js und TypeScript gebaut, ein FastAPI Backend erstellt, Gemini API verbunden und das System mit Vercel und Render deployed.",
         reflection:
-          "Was mir geblieben ist: AI wurde für mich viel verständlicher, sobald sie mit einer echten Situation und einem echten Nutzerbedürfnis verbunden war.",
+          "Dieses Projekt hat mir geholfen zu verstehen, wie Frontend, Backend, APIs, Deployment und AI-Interaktion in einem echten Produkt zusammenarbeiten.",
         story: [
-          "Ich wollte, dass sich die Erfahrung direkt und einfach anfühlt, nicht übergestaltet.",
-          "Das Projekt hat mir gezeigt, dass auch ein kleines AI-System sinnvoll wirken kann, wenn es ein reales Alltagsproblem löst.",
-          "Es war einer der ersten Momente, in denen sich AI für mich praktisch und nicht nur theoretisch angefühlt hat.",
+          "Der Assistant beantwortet Fragen zu meinem Studium, meinen Projekten und meiner aktuellen Richtung.",
+          "Die Website unterstützt englische und deutsche Inhalte für ein Berlin-orientiertes Profil.",
+          "Das Projekt gab mir praktische Erfahrung mit Produktstruktur, Deployment, API-Verbindung und AI-Integration.",
+        ],
+      },
+      {
+        slug: "operations-intelligence-dashboard",
+        title: "Operations Intelligence Dashboard",
+        intro:
+          "Ein ERP- und Power-BI-Analytics-Projekt für einen Sportswear Order-to-Cash Prozess.",
+        context:
+          "Dieses Projekt simulierte ein Sportswear-Unternehmen, das Produkte in europäischen Märkten verkauft und Sales, Lagerbestand, Rechnungen und Zahlungen verwaltet.",
+        role:
+          "Ich habe mit dem Order-to-Cash Prozess gearbeitet, Geschäftsdaten strukturiert und Analysen zu Umsatz, Bestandsrisiko, Zahlungseingang und Nachbestellbedarf entwickelt.",
+        reflection:
+          "Das Projekt hat mir gezeigt, wie ERP-Daten nützlich werden, wenn sie mit klaren Management-Dashboards verbunden sind.",
+        story: [
+          "Runner Pro hatte die stärkste Nachfrage, aber niedrigen Bestand und dadurch ein klares Nachbestellrisiko.",
+          "Eine unbezahlte Rechnung reduzierte die Transparenz im Zahlungseingang und zeigte, warum Finanzdaten in Operations wichtig sind.",
+          "Das Dashboard verband Sales, Inventory, Payments und einfache Forecast-Logik in einer Executive View.",
         ],
       },
       {
         slug: "coca-cola-dashboard",
         title: "Coca-Cola Dashboard",
-        intro: "Ein Operations-Dashboard, das Leistung leichter lesbar machen soll.",
+        intro:
+          "Ein Tableau Dashboard, das Business Performance leichter lesbar macht.",
         context:
-          "Dieses Projekt drehte sich um operative Sichtbarkeit und KPI-Denken.",
+          "Dieses Projekt konzentrierte sich darauf, Geschäftsdaten in ein klares operatives Dashboard zu übersetzen.",
         role:
-          "Ich habe mit Geschäftsdaten gearbeitet, wichtige Kennzahlen mitgedacht und Tableau genutzt, um Informationen klarer und lesbarer darzustellen.",
+          "Ich habe mit KPIs, Sales Views, Produktperformance und Dashboard-Struktur in Tableau gearbeitet.",
         reflection:
-          "Was mir geblieben ist: Gute Visualisierung verändert wirklich, wie Menschen Informationen verstehen.",
+          "Es hat mir gezeigt, wie gutes Dashboard Design Business-Informationen verständlicher und handlungsorientierter machen kann.",
         story: [
-          "Das Projekt hat mich stärker darüber nachdenken lassen, wie Daten dargestellt werden und nicht nur welche Daten gezeigt werden.",
-          "Es hat mir geholfen, die Verbindung zwischen Struktur, Klarheit und Entscheidungen stärker zu schätzen.",
-          "Ich fand interessant, wie Designentscheidungen in einem Dashboard das Verständnis sehr praktisch beeinflussen können.",
+          "Das Projekt hat mich darüber nachdenken lassen, was ein Manager zuerst sehen muss.",
+          "Es verbesserte mein Verständnis für KPI-Auswahl und Dashboard-Lesbarkeit.",
+          "Es verband Datenvisualisierung mit Business-Entscheidungen.",
         ],
       },
       {
         slug: "urban-cycle",
         title: "Urban-Cycle",
-        intro: "Ein Circular-Economy-Konzept rund um Reparatur, Wiederverwendung und längere Produktlebensdauer.",
+        intro:
+          "Ein Circular-Economy-Konzept rund um Reparatur, Wiederverwendung, Anreize und längere Produktlebensdauer.",
         context:
-          "Urban-Cycle war weniger eine einzelne Funktion als ein ganzes System.",
+          "Urban-Cycle untersuchte, wie ein Geschäftsmodell Reparatur, Wiederverkauf und Wiederverwendung unterstützen kann.",
         role:
-          "Das Projekt untersuchte Reparatur, Wiederverkauf, Nutzeranreize, Preislogik und wie ein nachhaltigeres Modell trotzdem im Alltag praktisch funktionieren kann.",
+          "Ich habe am Business Model, der Preislogik, Nutzeranreizen und der Präsentationsstruktur gearbeitet.",
         reflection:
-          "Dieses Projekt hat mich dazu gebracht, weniger in isolierten Ideen und stärker in Systemen, Anreizen und langfristigem Wert zu denken.",
+          "Dieses Projekt hat mir geholfen, stärker in Systemen statt nur in einzelnen Features zu denken.",
         story: [
-          "Mir gefiel, dass das Konzept Nachhaltigkeit mit echtem Verhalten und praktischer Nutzung verbinden musste.",
-          "Es hat mich dazu gebracht, sorgfältiger darüber nachzudenken, was ein System über längere Zeit tragfähig macht.",
-          "Dieses Projekt hat mein Denken stärker in Richtung Produktsysteme verschoben.",
-        ],
-      },
-      {
-        slug: "nike-sense",
-        title: "Nike Sense",
-        intro: "Ein Konzept rund um Bewegung, Unterstützung und vernetzte Sporterlebnisse.",
-        context:
-          "Nike Sense hat Technologie mit etwas Persönlichem für mich verbunden: Sport.",
-        role:
-          "Die Idee untersuchte, wie Wearable-Systeme Bewegung, Feedback und Leistung auf eine stärker vernetzte Weise unterstützen könnten.",
-        reflection:
-          "Was mir geblieben ist, war die Energie des Konzepts und wie Technologie interessanter wird, wenn sie mit echter menschlicher Aktivität verbunden ist.",
-        story: [
-          "Dieses Projekt fühlte sich persönlicher an, weil es digitale Ideen mit Bewegung und Sport verbunden hat.",
-          "Es hat mir geholfen darüber nachzudenken, wie Produkterlebnisse unterstützend statt nur technisch wirken können.",
-          "Mir gefiel die Balance zwischen Technologie, Motivation und alltäglicher körperlicher Erfahrung.",
+          "Das Konzept verband Nachhaltigkeit mit praktischem Kundenverhalten.",
+          "Es half mir zu verstehen, wie Anreize Produktakzeptanz beeinflussen.",
+          "Es stärkte mein Business-Model- und Produktdenken.",
         ],
       },
     ],
