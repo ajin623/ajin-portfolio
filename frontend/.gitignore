@@ -1,0 +1,29 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.local
+backend/.env
+frontend/.env.local
+
+# Next.js
+.next/
+node_modules/
+frontend/.next/
+frontend/node_modules/
+
+# Build files
+dist/
+build/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
