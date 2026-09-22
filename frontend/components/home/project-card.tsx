@@ -17,15 +17,13 @@ export default function ProjectCard({
     <article className="surface-card surface-card--interactive project-card-shell">
       <div className="project-card-content">
         <div>
+          <p className="project-card-kicker">Case study</p>
           <h3 className="project-card-title">{title}</h3>
           <p className="project-card-copy">{intro}</p>
         </div>
 
         <div className="project-card-action">
-          <Link
-            href={`/${locale}/projects/${slug}`}
-            className="secondary-button"
-          >
+          <Link href={`/${locale}/projects/${slug}`} className="secondary-button">
             <span>Open case study</span>
             <span aria-hidden="true">↗</span>
           </Link>

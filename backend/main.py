@@ -87,21 +87,26 @@ My main interests:
 - practical AI systems
 
 My selected projects:
-1. AI Portfolio Platform
-- full-stack portfolio with an AI assistant
-- built with Next.js, TypeScript, FastAPI, Gemini API
-- deployed with Vercel and Render
 
-2. Operations Intelligence Dashboard
-- ERP and Power BI project for a sportswear order-to-cash process
-- focused on sales, inventory, invoices, cash collection, stock risk, and simple forecasting
-- based on Odoo ERP simulation and Power BI analytics
+1. Operations Intelligence Dashboard
+- Odoo ERP, Power BI, and Excel project
+- based on a sportswear order-to-cash process
+- focused on sales, inventory, invoices, payments, cash collection, and replenishment risk
 
-3. Coca-Cola Dashboard
-- Tableau dashboard focused on KPIs and business performance readability
+2. Football Performance and Fan Intelligence
+- Python and Power BI football analytics project
+- used public La Liga match data filtered for Real Madrid
+- included performance dashboarding, football text evaluation, document retrieval, and a controlled reporting workflow
+- the football text dataset was general football data and not Real Madrid-specific
 
-4. Urban-Cycle
-- circular economy business model concept focused on repair, reuse, incentives, and longer product life
+3. Coca-Cola FMCG Dashboard
+- Tableau dashboard with seven operational KPIs
+- focused on sales, product performance, readability, and management reporting
+
+4. Personal Portfolio Platform
+- multilingual full-stack portfolio
+- built with Next.js, TypeScript, Python FastAPI, Vercel, and Render
+- focused on project presentation, APIs, deployment, and user experience
 
 If someone asks about my level:
 Say I am early in my journey, but I am building practical projects to connect AI, analytics, and business systems.
@@ -143,10 +148,12 @@ def reply_beginner() -> str:
 
 def reply_projects() -> str:
     return (
-        "My selected projects are an AI portfolio platform, an Operations Intelligence Dashboard, a Coca-Cola dashboard, and Urban-Cycle. "
-        "Together, they show my interest in AI, business analytics, dashboards, ERP data, and digital product thinking."
+        "My selected projects are an Operations Intelligence Dashboard, "
+        "a Football Performance and Fan Intelligence project, "
+        "a Coca-Cola FMCG dashboard, and my personal portfolio platform. "
+        "Together they reflect my interest in business analytics, ERP processes, "
+        "data visualization, reporting, and practical digital systems."
     )
-
 
 def reply_learning() -> str:
     return (
@@ -179,9 +186,12 @@ def reply_coca_project() -> str:
     )
 
 
-def reply_urban_project() -> str:
+def reply_football_project() -> str:
     return (
-        "Urban-Cycle is a circular economy business model concept. It helped me think about repair, reuse, incentives, pricing, and long-term value."
+        "The Football Performance and Fan Intelligence project combines Python data preparation, "
+        "a Power BI dashboard for Real Madrid match performance, football text evaluation, "
+        "and a rule-based reporting workflow. The match data was Real Madrid-specific, "
+        "but the football text dataset was general football content."
     )
 
 
@@ -199,7 +209,9 @@ def fallback_answer(message: str) -> str:
 
     if has_any(text, ["beginner", "experience", "level", "junior", "senior"]):
         return reply_beginner()
-
+    if has_any(text, ["football", "real madrid", "fan intelligence", "match performance", "la liga", "ollama", "tf-idf"]):
+        return reply_football_project()
+    
     if has_any(text, ["projects", "project", "work", "portfolio", "built"]):
         return reply_projects()
 
@@ -208,7 +220,7 @@ def fallback_answer(message: str) -> str:
 
     if has_any(text, ["interest", "interests", "analytics", "dashboard", "data", "erp", "operations"]):
         return reply_interests()
-
+    
     if has_any(text, ["operations", "supply chain", "stride", "erp", "odoo", "power bi", "order-to-cash", "inventory"]):
         return reply_operations_project()
 
@@ -217,14 +229,14 @@ def fallback_answer(message: str) -> str:
 
     if has_any(text, ["coca", "tableau", "kpi"]):
         return reply_coca_project()
-
-    if has_any(text, ["urban", "circular", "reuse", "repair"]):
-        return reply_urban_project()
+    
+    if has_any(text, ["football", "real madrid", "la liga", "python", "power bi"]):
+        return reply_football_project()
 
     return (
         "I’m early in my journey, but my portfolio shows the direction I’m building toward: practical AI, business analytics, dashboards, and digital systems."
     )
-
+    
 
 @app.get("/")
 async def root():

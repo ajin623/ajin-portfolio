@@ -353,17 +353,25 @@ button {
   gap: 24px;
 }
 
+.project-card-kicker {
+  margin-bottom: 12px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 .project-card-title {
   font-size: 1.15rem;
   line-height: 1.12;
   letter-spacing: -0.04em;
   color: white;
-  max-width: 16ch;
+  max-width: 18ch;
 }
 
 .project-card-copy {
   margin-top: 14px;
-  max-width: 28ch;
+  max-width: 31ch;
   font-size: 0.96rem;
   line-height: 1.76;
   color: rgba(244, 241, 234, 0.68);

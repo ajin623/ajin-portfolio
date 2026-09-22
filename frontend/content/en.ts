@@ -28,49 +28,49 @@ export const en: Dictionary = {
   },
 
   work: {
-    eyebrow: "Selected work",
-    title: "Projects that connect AI, analytics, and business systems.",
-    description:
-      "A focused collection of projects where I practiced building, analysing, and explaining digital systems in a business context.",
-    projects: [
-      {
-        title: "AI Portfolio Platform",
-        category: "Next.js · FastAPI · Gemini API",
-        summary:
-          "A full-stack portfolio with an AI assistant, built as a personal digital product.",
-        details: [],
-        outcome:
-          "This helped me understand how frontend, backend, APIs, deployment, and AI interaction connect.",
-      },
-      {
-        title: "Operations Intelligence Dashboard",
-        category: "Odoo ERP · Power BI · Supply Chain",
-        summary:
-          "An order-to-cash analytics project for inventory risk, payment visibility, and replenishment planning.",
-        details: [],
-        outcome:
-          "This helped me understand how ERP data can support operational decision-making.",
-      },
-      {
-        title: "Coca-Cola Dashboard",
-        category: "Tableau · Business Analytics",
-        summary:
-          "A KPI dashboard focused on readable business performance and decision support.",
-        details: [],
-        outcome:
-          "This improved my understanding of dashboard structure and KPI communication.",
-      },
-      {
-        title: "Urban-Cycle",
-        category: "Business Model · Circular Economy",
-        summary:
-          "A business model concept focused on repair, reuse, incentives, and longer product life.",
-        details: [],
-        outcome:
-          "This pushed me to think more in systems and long-term value.",
-      },
-    ],
-  },
+  eyebrow: "Selected work",
+  title: "Projects that connect analytics, operations, and digital systems.",
+  description:
+    "A focused collection of projects where I worked with business data, dashboards, processes, reporting, and practical digital products.",
+  projects: [
+    {
+      title: "Operations Intelligence Dashboard",
+      category: "Odoo ERP · Power BI · Excel",
+      summary:
+        "An order-to-cash analytics project focused on inventory risk, payment visibility, and operational reporting.",
+      details: [],
+      outcome:
+        "This project strengthened my understanding of ERP processes, dashboarding, and operations decision support.",
+    },
+    {
+      title: "Football Performance & Fan Intelligence",
+      category: "Python · Power BI · Data Evaluation",
+      summary:
+        "A football analytics workflow combining Real Madrid performance reporting, football text evaluation, and controlled reporting.",
+      details: [],
+      outcome:
+        "This project strengthened my skills in data preparation, dashboard development, evaluation, and workflow design.",
+    },
+    {
+      title: "Coca-Cola FMCG Dashboard",
+      category: "Tableau · Business Analytics",
+      summary:
+        "A seven-KPI operational dashboard focused on sales and product performance.",
+      details: [],
+      outcome:
+        "This project improved my understanding of KPI selection, dashboard readability, and management reporting.",
+    },
+    {
+      title: "Personal Portfolio Platform",
+      category: "Next.js · TypeScript · FastAPI",
+      summary:
+        "A multilingual full-stack portfolio developed and deployed as a personal digital product.",
+      details: [],
+      outcome:
+        "This project gave me practical experience with frontend development, APIs, deployment, and debugging.",
+    },
+  ],
+},
 
   learningSignals: {
     eyebrow: "Current direction",

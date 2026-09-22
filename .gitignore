@@ -1,0 +1,30 @@
+﻿# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Private environment files
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env.local
+
+# Next.js and Node
+node_modules/
+.next/
+frontend/node_modules/
+frontend/.next/
+
+# Build files
+dist/
+build/
+*.tsbuildinfo
+
+# Editor and operating system
+.vscode/
+.DS_Store
+Thumbs.db
