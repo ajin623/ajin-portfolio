@@ -40,6 +40,22 @@ export default function AIAssistant({ locale }: { locale: string }) {
         body: JSON.stringify({ message: userMessage }),
       });
 
+      if (!res.ok) {
+        const errorText = await res.text();
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "assistant",
+            text:
+              locale === "de"
+                ? `Fehler: ${res.status} ${errorText}`
+                : `Error: ${res.status} ${errorText}`,
+          },
+        ]);
+        setLoading(false);
+        return;
+      }
+
       const data = await res.json();
 
       setMessages((prev) => [
@@ -53,15 +69,15 @@ export default function AIAssistant({ locale }: { locale: string }) {
               : "Something went wrong."),
         },
       ]);
-    } catch {
+    } catch (error) {
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
           text:
             locale === "de"
-              ? "Etwas ist schiefgelaufen."
-              : "Something went wrong.",
+              ? `Netzwerkfehler: ${String(error)}`
+              : `Network error: ${String(error)}`,
         },
       ]);
     }
