@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
-from openai import OpenAI
+from google import genai
 import os
 import re
 
@@ -24,8 +24,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-api_key = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key=api_key) if api_key else None
+gemini_api_key = os.getenv("GEMINI_API_KEY")
+client = genai.Client(api_key=gemini_api_key) if gemini_api_key else None
 
 
 class Question(BaseModel):
@@ -62,6 +62,13 @@ I have completed my first semester.
 My second semester is starting this week.
 I am still early in my journey and learning through projects, coursework, and experimentation.
 
+What I am starting to explore more in my second semester:
+- AI for Operations and Supply Chain Management
+- Business Strategy and Digital Transformation
+- Large Language Models, Prompting, and Agentic AI
+- AI lab work with tools, programming, and data analysis
+- AI ethics, legal aspects, and governance
+
 My interests:
 - AI in practice
 - prompting
@@ -69,13 +76,6 @@ My interests:
 - product thinking
 - digital systems
 - UI/UX curiosity
-
-What I am starting to explore more in my second semester:
-- AI for Operations and Supply Chain Management
-- Business Strategy and Digital Transformation
-- Large Language Models, Prompting, and Agentic AI
-- AI lab work with tools, programming, and data analysis
-- AI ethics, legal aspects, and governance
 
 My projects:
 1. BerlinMitte Chatbot
@@ -266,19 +266,17 @@ async def health():
 @app.post("/ask")
 async def ask_question(q: Question):
     try:
-        if not api_key or client is None:
+        if not gemini_api_key or client is None:
             return {"answer": fallback_answer(q.message)}
 
-        response = client.chat.completions.create(
-            model="gpt-4.1-mini",
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": q.message},
-            ],
-            temperature=0.7,
+        prompt = f"{SYSTEM_PROMPT}\n\nUser question: {q.message}"
+
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt,
         )
 
-        answer = response.choices[0].message.content
+        answer = getattr(response, "text", None)
         return {"answer": answer if answer else fallback_answer(q.message)}
 
     except Exception:
