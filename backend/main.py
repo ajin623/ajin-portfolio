@@ -50,21 +50,27 @@ You must always answer in FIRST PERSON, as if you are Ajin speaking.
 Use "I", "my", and "I'm".
 
 Tone:
+- natural
+- simple
+- warm
+- clear
+- grounded
+- not exaggerated
 
-* natural
-* simple
-* warm
-* clear
-* grounded
-* not exaggerated
+Answering rules:
+- answer the user's actual question directly
+- when asked about a specific aspect of a project, focus on that aspect
+- if asked about technologies, explain the technology stack
+- if asked about findings, explain the findings
+- if asked about data, explain the datasets
+- if asked about limitations, explain the limitations
+- do not repeat the complete project overview for every question
+- keep most answers concise unless the user asks for detail
 
 Do not:
-
-* pretend I am a senior professional
-* claim advanced engineering experience
-* use unnecessary corporate language
-* make answers too long
-* invent education, skills, projects, or work experience
+- pretend I am a senior professional
+- claim advanced experience I do not have
+- invent skills, projects, results, or education
 
 Context about me:
 
@@ -95,29 +101,33 @@ I am now building on those subjects through practical projects focused on:
 
 My selected projects:
 
-1. Operations Intelligence Dashboard
+1. OpsPilot - Delivery Operations Analytics
+- my strongest end-to-end analytics project
+- built with Python, pandas, PostgreSQL, SQL, Power BI, FastAPI, Docker Compose, GitHub Actions, and automated tests
+- uses historical Brazilian e-commerce data
+- validates seven linked datasets and creates reliable order-level analytical facts
+- detects material delivery deterioration using an explicit deterministic rule
+- investigates business impact, geographic contribution, seller cohorts, and process timing
+- provides results through a Power BI dashboard, deterministic decision brief, and read-only API
+- includes 35 local automated tests, including 14 environment-free tests used in CI
+- it is a historical analytical system and not a live production monitoring platform
+- it does not claim causal inference
 
-* Odoo ERP, Power BI, and Excel project
-* based on a sportswear order-to-cash process
-* focused on sales, inventory, invoices, payments, cash collection, and replenishment risk
+2. Operations Intelligence Dashboard
+- Odoo ERP, Power BI, and Excel project
+- based on a sportswear order-to-cash process
+- focused on sales, inventory, invoices, payments, cash collection, and replenishment risk
 
-2. Football Performance Analytics and Fan Intelligence
-
-* Python and Power BI football analytics project
-* used public La Liga match data filtered for Real Madrid
-* included performance dashboarding, football text evaluation, document retrieval, and a controlled reporting workflow
-* the football text dataset contained general football data and was not Real Madrid-specific
-
-3. Coca-Cola FMCG Dashboard
-
-* Tableau dashboard with seven operational KPIs
-* focused on sales, product performance, readability, and management reporting
+3. Football Performance Analytics and Fan Intelligence
+- Python and Power BI football analytics project
+- used public La Liga match data filtered for Real Madrid
+- included performance dashboarding, football text evaluation, document retrieval, and a controlled reporting workflow
+- the football text dataset contained general football data and was not Real Madrid-specific
 
 4. Personal Portfolio Platform
-
-* multilingual full-stack portfolio
-* built with Next.js, TypeScript, Python FastAPI, Vercel, and Render
-* focused on project presentation, APIs, deployment, and user experience
+- multilingual full-stack portfolio
+- built with Next.js, TypeScript, Python FastAPI, Vercel, and Render
+- focused on project presentation, APIs, deployment, and user experience
 
 If someone asks about my current semester:
 Explain that I have completed the first two semesters of my master's programme.
@@ -175,11 +185,11 @@ def reply_beginner() -> str:
 
 def reply_projects() -> str:
     return (
-        "My selected projects are an Operations Intelligence Dashboard, "
-        "a Football Performance and Fan Intelligence project, "
-        "a Coca-Cola FMCG dashboard, and my personal portfolio platform. "
-        "Together they reflect my interest in business analytics, ERP processes, "
-        "data visualization, reporting, and practical digital systems."
+        "My main portfolio projects are OpsPilot, an Operations Intelligence Dashboard, "
+        "a Football Performance Analytics and Fan Intelligence project, and my personal "
+        "portfolio platform. OpsPilot is currently my most complete project because it "
+        "connects data engineering, SQL analytics, Power BI, API development, testing, "
+        "and reproducible deployment around one operational business problem."
     )
 
 def reply_learning() -> str:
@@ -212,7 +222,61 @@ def reply_coca_project() -> str:
     return (
         "The Coca-Cola Dashboard is a Tableau project focused on KPI visibility, business performance, and making data easier to read for decision support."
     )
+def reply_opspilot_overview() -> str:
+    return (
+        "OpsPilot is my most complete operations analytics project. "
+        "I built it around historical Brazilian e-commerce data to investigate "
+        "delivery-performance deterioration. The workflow validates the source data, "
+        "calculates delivery KPIs, detects material issue months, investigates business "
+        "impact, and publishes verified results through a Power BI dashboard, "
+        "a decision brief, and a read-only API. I kept the analytical logic "
+        "deterministic so the calculations remain reproducible and auditable."
+    )
 
+
+def reply_opspilot_technologies() -> str:
+    return (
+        "For OpsPilot, I used Python 3.12 with pandas and NumPy for data preparation "
+        "and validation, PostgreSQL with SQL and Psycopg for the analytical data layer, "
+        "and Power BI with Power Query and DAX for reporting. "
+        "I built a read-only API with FastAPI, Pydantic, and Uvicorn. "
+        "For reproducibility and software quality, I used Docker Compose, "
+        "Python unittest, GitHub Actions, Git, and GitHub."
+    )
+
+
+def reply_opspilot_findings() -> str:
+    return (
+        "OpsPilot detected four months where on-time delivery deteriorated by at least "
+        "five percentage points compared with the previous month. "
+        "The most severe case was February 2018, when on-time delivery fell "
+        "from 93.44% to 84.01%. There were 1,048 late orders and approximately "
+        "617.74 excess late orders compared with the previous month's late rate. "
+        "RJ and SP together represented about 50.1% of the estimated excess. "
+        "Carrier-to-customer time increased by 2.91 days, while seller handling time "
+        "was almost unchanged. I treated this as an investigation hypothesis rather "
+        "than claiming that the data proved the cause."
+    )
+
+
+def reply_opspilot_data() -> str:
+    return (
+        "OpsPilot uses the historical Brazilian E-Commerce Public Dataset by Olist. "
+        "I worked with seven linked datasets covering customers, products, sellers, "
+        "orders, order items, payments, and reviews. I validated and cleaned the files "
+        "before loading them into PostgreSQL, then created order-level analytical facts "
+        "so one-to-many relationships would not distort KPIs."
+    )
+
+
+def reply_opspilot_limitations() -> str:
+    return (
+        "OpsPilot uses historical data rather than a live operational feed. "
+        "The analysis identifies patterns, concentrations, and investigation priorities, "
+        "but it does not prove causation. The dataset does not include carrier identifiers "
+        "or inventory information, and the current FastAPI and Docker setup is designed "
+        "for local analytical validation rather than public production deployment."
+    )
 
 def reply_football_project() -> str:
     return (
@@ -226,45 +290,262 @@ def reply_football_project() -> str:
 def fallback_answer(message: str) -> str:
     text = normalize(message)
 
-    if text in ["hi", "hello", "hey", "hii", "hey there", "yo"]:
-        return "Hi, I’m Ajin. You can ask me about my studies, projects, interests, or what I’m learning right now."
+    # ---------------------------------------------------------
+    # GREETING
+    # ---------------------------------------------------------
 
-    if has_any(text, ["who are you", "about you", "introduce", "overview", "summary", "tell me about yourself"]):
-        return reply_intro()
+    if text in [
+        "hi",
+        "hello",
+        "hey",
+        "hii",
+        "hey there",
+        "yo",
+    ]:
+        return (
+            "Hi, I’m Ajin. You can ask me about my studies, projects, "
+            "OpsPilot, interests, or what I’m learning."
+        )
 
-    if has_any(text, ["study", "studies", "studying", "education", "semester", "srh", "course"]):
-        return reply_studies()
+    # ---------------------------------------------------------
+    # OPSPILOT - SPECIFIC QUESTIONS
+    # Specific checks MUST come before the general OpsPilot check.
+    # ---------------------------------------------------------
 
-    if has_any(text, ["beginner", "experience", "level", "junior", "senior"]):
-        return reply_beginner()
-    if has_any(text, ["football", "real madrid", "fan intelligence", "match performance", "la liga", "ollama", "tf-idf"]):
+    if (
+        has_any(
+            text,
+            [
+                "technology",
+                "technologies",
+                "tech",
+                "tech stack",
+                "stack",
+                "tools",
+                "programming",
+                "built with",
+                "what did you use",
+            ],
+        )
+        and has_any(text, ["opspilot", "ops pilot"])
+    ):
+        return reply_opspilot_technologies()
+
+    if (
+    has_any(
+        text,
+        [
+            "find",
+            "finding",
+            "findings",
+            "found",
+            "result",
+            "results",
+            "discover",
+            "discovered",
+            "detect",
+            "detected",
+            "identify",
+            "identified",
+            "incident",
+            "february",
+            "late orders",
+            "delivery problem",
+            "delivery issue",
+            "what happened",
+            "main issue",
+        ],
+    )
+    and has_any(text, ["opspilot", "ops pilot"])
+):
+        return reply_opspilot_findings()
+
+    if (
+        has_any(
+            text,
+            [
+                "data",
+                "dataset",
+                "datasets",
+                "source data",
+                "olist",
+                "records",
+                "tables",
+            ],
+        )
+        and has_any(text, ["opspilot", "ops pilot"])
+    ):
+        return reply_opspilot_data()
+
+    if (
+        has_any(
+            text,
+            [
+                "limitation",
+                "limitations",
+                "weakness",
+                "weaknesses",
+                "production",
+                "live",
+                "causal",
+                "causation",
+                "constraint",
+                "constraints",
+            ],
+        )
+        and has_any(text, ["opspilot", "ops pilot"])
+    ):
+        return reply_opspilot_limitations()
+
+    # ---------------------------------------------------------
+    # OPSPILOT - GENERAL QUESTION
+    # ---------------------------------------------------------
+
+    if has_any(
+        text,
+        [
+            "opspilot",
+            "ops pilot",
+        ],
+    ):
+        return reply_opspilot_overview()
+
+    # ---------------------------------------------------------
+    # OTHER SPECIFIC PROJECTS
+    # ---------------------------------------------------------
+
+    if has_any(
+        text,
+        [
+            "football",
+            "real madrid",
+            "fan intelligence",
+            "match performance",
+            "la liga",
+            "tf-idf",
+        ],
+    ):
         return reply_football_project()
-    
-    if has_any(text, ["projects", "project", "work", "portfolio", "built"]):
-        return reply_projects()
 
-    if has_any(text, ["learning", "learn", "focus", "right now", "currently", "second semester"]):
-        return reply_learning()
-
-    if has_any(text, ["interest", "interests", "analytics", "dashboard", "data", "erp", "operations"]):
-        return reply_interests()
-    
-    if has_any(text, ["operations", "supply chain", "stride", "erp", "odoo", "power bi", "order-to-cash", "inventory"]):
+    if has_any(
+        text,
+        [
+            "operations intelligence",
+            "supply chain",
+            "stride",
+            "odoo",
+            "order-to-cash",
+            "inventory",
+        ],
+    ):
         return reply_operations_project()
 
-    if has_any(text, ["ai portfolio", "gemini", "fastapi", "next.js", "vercel", "render"]):
+    if has_any(
+        text,
+        [
+            "ai portfolio",
+            "personal portfolio",
+            "fastapi",
+            "next.js",
+            "vercel",
+            "render",
+        ],
+    ):
         return reply_portfolio_project()
 
-    if has_any(text, ["coca", "tableau", "kpi"]):
-        return reply_coca_project()
-    
-    if has_any(text, ["football", "real madrid", "la liga", "python", "power bi"]):
-        return reply_football_project()
+    # ---------------------------------------------------------
+    # PERSONAL / STUDIES
+    # ---------------------------------------------------------
+
+    if has_any(
+        text,
+        [
+            "who are you",
+            "about you",
+            "introduce",
+            "overview",
+            "summary",
+            "tell me about yourself",
+        ],
+    ):
+        return reply_intro()
+
+    if has_any(
+        text,
+        [
+            "study",
+            "studies",
+            "studying",
+            "education",
+            "semester",
+            "srh",
+            "course",
+        ],
+    ):
+        return reply_studies()
+
+    if has_any(
+        text,
+        [
+            "beginner",
+            "experience",
+            "level",
+            "junior",
+            "senior",
+        ],
+    ):
+        return reply_beginner()
+
+    if has_any(
+        text,
+        [
+            "learning",
+            "learn",
+            "focus",
+            "right now",
+            "currently",
+        ],
+    ):
+        return reply_learning()
+
+    if has_any(
+        text,
+        [
+            "interest",
+            "interests",
+            "analytics",
+            "dashboard",
+            "business analytics",
+            "data analytics",
+        ],
+    ):
+        return reply_interests()
+
+    # ---------------------------------------------------------
+    # GENERAL PROJECT QUESTION
+    # ---------------------------------------------------------
+
+    if has_any(
+        text,
+        [
+            "projects",
+            "project",
+            "work",
+            "portfolio",
+            "built",
+        ],
+    ):
+        return reply_projects()
+
+    # ---------------------------------------------------------
+    # DEFAULT
+    # ---------------------------------------------------------
 
     return (
-        "I’m early in my journey, but my portfolio shows the direction I’m building toward: practical AI, business analytics, dashboards, and digital systems."
+        "I’m building practical experience through projects around business analytics, "
+        "operations, dashboards, data systems, reporting, and digital products. "
+        "You can ask me about OpsPilot, my other projects, my studies, or my current direction."
     )
-    
 
 @app.get("/")
 async def root():

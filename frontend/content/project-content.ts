@@ -2,6 +2,24 @@ export const projectContent = {
   en: {
     projects: [
       {
+        slug: "opspilot-delivery-operations-analytics",
+        title: "OpsPilot — Delivery Operations Analytics",
+        intro:
+          "A deterministic operations analytics system that detects delivery deterioration, investigates business impact, and turns verified results into decision-ready outputs.",
+        context:
+          "Operational dashboards can show that a KPI changed, but they do not always explain whether the change is material, where the impact is concentrated, or what should be investigated next. OpsPilot was built around this gap using historical Brazilian e-commerce data.",
+        role:
+          "I designed the data pipeline, PostgreSQL model, SQL KPI logic, incident detection, investigation queries, Power BI reporting layer, read-only FastAPI interface, automated tests, continuous integration, and Docker Compose runtime.",
+        reflection:
+          "The biggest lesson was that reliable analytics depends on much more than the final chart. Data grain, validation rules, reproducible calculations, testing, and careful analytical language all matter before a dashboard can support a decision.",
+        story: [
+          "The system validated seven linked datasets and transformed them into order-level analytical facts and monthly delivery KPIs.",
+          "Four material delivery deterioration months were detected using an explicit month-over-month rule. February 2018 was the most severe, with on-time delivery falling from 93.44% to 84.01%.",
+          "The final analytical outputs included a Power BI dashboard, deterministic decision brief, read-only API, 35 automated tests, GitHub Actions validation, and a Docker Compose local stack.",
+        ],
+      },
+
+      {
         slug: "operations-intelligence-dashboard",
         title: "Operations Intelligence Dashboard",
         intro:
@@ -18,47 +36,32 @@ export const projectContent = {
           "The Power BI dashboard connected sales, inventory, invoices, payments, and simple forecast logic in one management view.",
         ],
       },
+
       {
         slug: "football-performance-fan-intelligence",
-        title: "Football Performance & Fan Intelligence",
+        title: "Football Performance Analytics & Fan Intelligence",
         intro:
           "A football analytics workflow combining Real Madrid match-performance reporting, football text evaluation, and controlled reporting.",
         context:
-          "Football match statistics, fan reactions, and project findings often exist in separate files. This project explored how these data sources could be organised into a clearer analytics and reporting workflow for a football analyst or media team.",
+          "Football match statistics, fan reactions, and project findings often exist in separate files. This project explored how these sources could be organised into a clearer analytics and reporting workflow for a football analyst or media team.",
         role:
           "I prepared public La Liga match data with Python, filtered Real Madrid matches, created calculated performance fields, and developed a one-page Power BI dashboard. I also compared text-classification prompts and tested a rule-based reporting workflow with human approval.",
         reflection:
-          "The project showed me that data quality, clear evaluation, and focused reporting are more important than adding unnecessary technical complexity.",
+          "The project showed me that data quality, clear evaluation, and focused reporting are more important than unnecessary technical complexity.",
         story: [
           "The dashboard analysed 38 matches, including 26 wins, a 68.4% win rate, 78 goals scored, and a +40 goal difference.",
-          "A more detailed prompt improved topic and intent classification, but sarcasm, neutral language, and mixed meanings remained difficult.",
-          "A small document-retrieval module answered project questions using prepared project documents and was evaluated with 20 test questions.",
+          "A more detailed prompt improved topic and intent classification, while sarcasm, neutral language, and mixed meanings remained difficult.",
+          "A small document-retrieval module was evaluated with 20 project questions and used prepared project documents as its knowledge base.",
         ],
       },
-      {
-        slug: "coca-cola-dashboard",
-        title: "Coca-Cola FMCG Dashboard",
-        intro:
-          "A Tableau dashboard designed to make sales and product performance easier to understand.",
-        context:
-          "The project focused on translating business data into a readable operational dashboard for management reporting and decision support.",
-        role:
-          "I worked with seven business KPIs, sales analysis, product performance, dashboard structure, and visual readability in Tableau.",
-        reflection:
-          "This project improved my understanding of KPI selection and how a dashboard should guide the user toward the most important information.",
-        story: [
-          "The dashboard was designed around a COO reporting use case.",
-          "Sales and product performance were presented through clear KPI and comparison views.",
-          "The project connected data visualisation with practical management questions.",
-        ],
-      },
+
       {
         slug: "ai-portfolio-platform",
         title: "Personal Portfolio Platform",
         intro:
           "A multilingual full-stack portfolio built as a personal digital product.",
         context:
-          "I wanted to create more than a static CV website. The goal was to build a clear and interactive platform that presents my studies, projects, and current professional direction.",
+          "I wanted to create more than a static CV website. The goal was to build a clear and interactive platform for presenting my studies, projects, and professional direction.",
         role:
           "I built the frontend with Next.js and TypeScript, created a Python FastAPI backend, connected the frontend and backend through API requests, and deployed the system using Vercel and Render.",
         reflection:
@@ -84,6 +87,24 @@ export const projectContent = {
   de: {
     projects: [
       {
+        slug: "opspilot-delivery-operations-analytics",
+        title: "OpsPilot — Delivery Operations Analytics",
+        intro:
+          "Ein deterministisches Operations-Analytics-System zur Erkennung von Lieferproblemen, Untersuchung ihrer Business-Auswirkungen und Aufbereitung verifizierter Ergebnisse für Entscheidungen.",
+        context:
+          "Operative Dashboards können zeigen, dass sich ein KPI verändert hat, erklären aber nicht immer, ob die Veränderung relevant ist, wo die Auswirkungen konzentriert sind oder was als Nächstes untersucht werden sollte. OpsPilot wurde für genau diese Lücke mit historischen E-Commerce-Daten entwickelt.",
+        role:
+          "Ich entwickelte die Datenpipeline, das PostgreSQL-Modell, die SQL-KPI-Logik, Incident Detection, Investigation Queries, die Power-BI-Reporting-Schicht, eine Read-only-FastAPI-Schnittstelle, automatisierte Tests, Continuous Integration und einen Docker-Compose-Runtime.",
+        reflection:
+          "Die wichtigste Erkenntnis war, dass zuverlässige Analytics weit über das finale Diagramm hinausgeht. Datengranularität, Validierungsregeln, reproduzierbare Berechnungen, Tests und eine sorgfältige analytische Sprache müssen stimmen, bevor ein Dashboard Entscheidungen unterstützen kann.",
+        story: [
+          "Das System validierte sieben verbundene Datensätze und transformierte sie in Order-Level-Facts und monatliche Delivery-KPIs.",
+          "Vier relevante Monate mit Delivery-Verschlechterung wurden über eine explizite Month-over-Month-Regel erkannt. Im Februar 2018 fiel die On-Time-Delivery-Rate von 93,44 % auf 84,01 %.",
+          "Die finalen Outputs umfassten ein Power-BI-Dashboard, einen deterministischen Decision Brief, eine Read-only-API, 35 automatisierte Tests, GitHub-Actions-Validierung und einen lokalen Docker-Compose-Stack.",
+        ],
+      },
+
+      {
         slug: "operations-intelligence-dashboard",
         title: "Operations Intelligence Dashboard",
         intro:
@@ -100,6 +121,7 @@ export const projectContent = {
           "Das Power-BI-Dashboard verband Sales, Inventory, Rechnungen, Zahlungen und einfache Forecast-Logik in einer Management-Ansicht.",
         ],
       },
+
       {
         slug: "football-performance-fan-intelligence",
         title: "Football Performance Analytics & Fan Intelligence",
@@ -113,34 +135,18 @@ export const projectContent = {
           "Das Projekt zeigte mir, dass Datenqualität, klare Evaluation und fokussiertes Reporting wichtiger sind als unnötige technische Komplexität.",
         story: [
           "Das Dashboard analysierte 38 Spiele mit 26 Siegen, einer Siegquote von 68,4 %, 78 erzielten Toren und einer Tordifferenz von +40.",
-          "Ein detaillierterer Prompt verbesserte die Topic- und Intent-Klassifikation, aber Sarkasmus, neutrale Sprache und Mehrdeutigkeit blieben schwierig.",
-          "Ein kleines Dokumenten-Retrieval-Modul beantwortete Projektfragen anhand vorbereiteter Dokumente und wurde mit 20 Testfragen evaluiert.",
+          "Ein detaillierterer Prompt verbesserte die Topic- und Intent-Klassifikation, während Sarkasmus, neutrale Sprache und Mehrdeutigkeit schwierig blieben.",
+          "Ein kleines Dokumenten-Retrieval-Modul wurde mit 20 Projektfragen evaluiert und nutzte vorbereitete Projektdokumente als Wissensbasis.",
         ],
       },
-      {
-        slug: "coca-cola-dashboard",
-        title: "Coca-Cola FMCG Dashboard",
-        intro:
-          "Ein Tableau Dashboard, das Sales- und Produktperformance verständlicher darstellt.",
-        context:
-          "Das Projekt konzentrierte sich darauf, Geschäftsdaten in ein gut lesbares operatives Dashboard für Management Reporting und Entscheidungsunterstützung zu übersetzen.",
-        role:
-          "Ich arbeitete mit sieben Business KPIs, Sales-Analysen, Produktperformance, Dashboard-Struktur und visueller Lesbarkeit in Tableau.",
-        reflection:
-          "Das Projekt verbesserte mein Verständnis für KPI-Auswahl und dafür, wie ein Dashboard Nutzer zu den wichtigsten Informationen führen sollte.",
-        story: [
-          "Das Dashboard wurde für einen COO-Reporting-Anwendungsfall entwickelt.",
-          "Sales und Produktperformance wurden durch klare KPI- und Vergleichsansichten dargestellt.",
-          "Das Projekt verband Datenvisualisierung mit praktischen Management-Fragen.",
-        ],
-      },
+
       {
         slug: "ai-portfolio-platform",
         title: "Persönliche Portfolio-Plattform",
         intro:
           "Ein mehrsprachiges Full-Stack Portfolio, aufgebaut wie ein persönliches digitales Produkt.",
         context:
-          "Ich wollte mehr als eine statische Lebenslauf-Website entwickeln. Das Ziel war eine klare und interaktive Plattform, die mein Studium, meine Projekte und meine aktuelle berufliche Richtung zeigt.",
+          "Ich wollte mehr als eine statische Lebenslauf-Website entwickeln. Das Ziel war eine klare und interaktive Plattform für mein Studium, meine Projekte und meine berufliche Richtung.",
         role:
           "Ich entwickelte das Frontend mit Next.js und TypeScript, erstellte ein Python-FastAPI-Backend, verband Frontend und Backend über API Requests und deployte das System mit Vercel und Render.",
         reflection:

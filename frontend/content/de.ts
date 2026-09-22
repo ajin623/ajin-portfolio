@@ -9,19 +9,19 @@ contact: "Kontakt",
 },
 
 hero: {
-eyebrow: "Ajin Babu · Berlin",
-title:
-"Ich erkunde, wie AI und Daten bessere Business-Entscheidungen unterstützen können.",
-description:
-"Ich habe das zweite Semester meines M.Sc. AI in Business an der SRH Berlin abgeschlossen. Dieses Portfolio zeigt Projekte, in denen ich Analytics, Dashboards, Business-Prozesse und digitales Produktdenken praktisch angewendet habe.",
-rotatingLines: [
-"Ich lerne, wie Daten in reale Business-Systeme passen.",
-"Mich interessieren Dashboards, die Entscheidungen einfacher machen.",
-"ERP-Daten werden nützlich, wenn sie klar verbunden werden.",
-"Gute Analytics sollte Menschen beim Handeln unterstützen, nicht nur beim Beobachten.",
-],
-primaryCta: "Projekte ansehen",
-secondaryCta: "Kontakt",
+  eyebrow: "Ajin Babu · Berlin",
+  title:
+    "Ich erkunde, wie Daten, Analytics und digitale Systeme bessere Business-Entscheidungen unterstützen können.",
+  description:
+    "Ich habe die ersten beiden Semester meines M.Sc. AI in Business an der SRH Berlin abgeschlossen. Dieses Portfolio zeigt Projekte rund um Analytics, Operations, Dashboards, Datensysteme und praktische digitale Produkte.",
+  rotatingLines: [
+    "Zuverlässige Analytics beginnt vor dem Dashboard.",
+    "Mich interessieren Systeme, die Daten in Entscheidungen übersetzen.",
+    "Operative Probleme werden klarer, wenn Daten sauber strukturiert sind.",
+    "Gutes Reporting sollte zeigen, was sich verändert hat und was als Nächstes untersucht werden sollte.",
+  ],
+  primaryCta: "Projekte ansehen",
+  secondaryCta: "Kontakt",
 },
 
 introStrip: {
@@ -29,49 +29,52 @@ items: [],
 },
 
 work: {
-eyebrow: "Ausgewählte Arbeiten",
-title:
-"Projekte, die Analytics, Operations und digitale Systeme verbinden.",
-description:
-"Eine fokussierte Auswahl von Projekten, in denen ich mit Geschäftsdaten, Dashboards, Prozessen, Reporting und praktischen digitalen Produkten gearbeitet habe.",
-projects: [
-{
-title: "Operations Intelligence Dashboard",
-category: "Odoo ERP · Power BI · Excel",
-summary:
-"Ein Order-to-Cash Analytics-Projekt mit Fokus auf Bestandsrisiko, Zahlungstransparenz und operatives Reporting.",
-details: [],
-outcome:
-"Das Projekt stärkte mein Verständnis für ERP-Prozesse, Dashboarding und operative Entscheidungsunterstützung.",
-},
-{
-title: "Football Performance Analytics & Fan Intelligence",
-category: "Python · Power BI · Datenauswertung",
-summary:
-"Ein Football-Analytics-Workflow, der Real-Madrid-Performance-Reporting, Fußball-Textauswertung und kontrolliertes Reporting verbindet.",
-details: [],
-outcome:
-"Das Projekt stärkte meine Kenntnisse in Datenaufbereitung, Dashboard-Entwicklung, Evaluation und Workflow-Design.",
-},
-{
-title: "Coca-Cola FMCG Dashboard",
-category: "Tableau · Business Analytics",
-summary:
-"Ein operatives Dashboard mit sieben KPIs für Sales- und Produktperformance.",
-details: [],
-outcome:
-"Das Projekt verbesserte mein Verständnis für KPI-Auswahl, Dashboard-Lesbarkeit und Management Reporting.",
-},
-{
-title: "Persönliche Portfolio-Plattform",
-category: "Next.js · TypeScript · FastAPI",
-summary:
-"Ein mehrsprachiges Full-Stack Portfolio, entwickelt und deployed als persönliches digitales Produkt.",
-details: [],
-outcome:
-"Das Projekt gab mir praktische Erfahrung mit Frontend-Entwicklung, APIs, Deployment und Debugging.",
-},
-],
+  eyebrow: "Ausgewählte Arbeiten",
+  title:
+    "Projekte, die Analytics, Operations und digitale Systeme verbinden.",
+  description:
+    "Eine fokussierte Auswahl von Projekten, in denen ich mit Geschäftsdaten, Dashboards, Prozessen, Reporting und praktischen digitalen Systemen gearbeitet habe.",
+  projects: [
+    {
+      title: "OpsPilot — Delivery Operations Analytics",
+      category: "Python · PostgreSQL · Power BI · FastAPI",
+      summary:
+        "Ein deterministisches Operations-Analytics-System zur Erkennung von Lieferproblemen, Untersuchung ihrer Business-Auswirkungen und Bereitstellung verifizierter Decision-Support-Outputs.",
+      details: [],
+      outcome:
+        "Das Projekt stärkte meine Kenntnisse in Data Engineering, SQL Analytics, Business Intelligence, API Design, Testing und reproduzierbarer Bereitstellung.",
+    },
+
+    {
+      title: "Operations Intelligence Dashboard",
+      category: "Odoo ERP · Power BI · Excel",
+      summary:
+        "Ein Order-to-Cash Analytics-Projekt mit Fokus auf Bestandsrisiko, Zahlungstransparenz und operatives Reporting.",
+      details: [],
+      outcome:
+        "Das Projekt stärkte mein Verständnis für ERP-Prozesse, Dashboarding und operative Entscheidungsunterstützung.",
+    },
+
+    {
+      title: "Football Performance Analytics & Fan Intelligence",
+      category: "Python · Power BI · Datenauswertung",
+      summary:
+        "Ein Football-Analytics-Workflow, der Real-Madrid-Performance-Reporting, Fußball-Textauswertung und kontrolliertes Reporting verbindet.",
+      details: [],
+      outcome:
+        "Das Projekt stärkte meine Kenntnisse in Datenaufbereitung, Dashboard-Entwicklung, Evaluation und Workflow-Design.",
+    },
+
+    {
+      title: "Persönliche Portfolio-Plattform",
+      category: "Next.js · TypeScript · FastAPI",
+      summary:
+        "Ein mehrsprachiges Full-Stack Portfolio, entwickelt und deployed als persönliches digitales Produkt.",
+      details: [],
+      outcome:
+        "Das Projekt gab mir praktische Erfahrung mit Frontend-Entwicklung, APIs, Deployment und Debugging.",
+    },
+  ],
 },
 
 learningSignals: {
@@ -130,7 +133,7 @@ eyebrow: "Über mich",
 title: "Von Wayanad nach Berlin.",
 paragraphs: [
 "Ich studiere M.Sc. AI in Business an der SRH University Berlin und habe die ersten beiden Semester des Studiengangs abgeschlossen.",
-"Mich interessiert vor allem die praktische Seite von Daten und digitalen Systemen: wie Dashboards, Workflows, Business-Prozesse und Technologie bessere Entscheidungen unterstützen können.",
+"Mich interessiert vor allem praktische Analytics: wie zuverlässige Daten, Dashboards, Workflows und Business-Systeme dabei helfen können, Probleme zu untersuchen und bessere Entscheidungen zu treffen.",
 "Außerhalb des Studiums bedeuten mir Musik, Fußball, Reisen und visuelles Design viel. Sie prägen, wie ich Rhythmus, Struktur, Bewegung und Details wahrnehme.",
 ],
 stats: [
@@ -148,7 +151,7 @@ value: "Zwei Semester abgeschlossen",
 },
 {
 label: "Fokus",
-value: "Analytics · Operations · Business-Systeme",
+value: "Analytics · Operations · DatenSysteme",
 },
 ],
 },
