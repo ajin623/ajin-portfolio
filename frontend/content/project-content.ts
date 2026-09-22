@@ -2,79 +2,81 @@ export const projectContent = {
   en: {
     projects: [
       {
-        slug: "ai-portfolio-platform",
-        title: "AI Portfolio Platform",
-        intro: "A full-stack portfolio with an AI assistant, built as a personal digital product.",
-        context:
-          "I wanted my portfolio to work like a small product instead of only a static resume page.",
-        role:
-          "I built the frontend with Next.js and TypeScript, created a FastAPI backend, connected Gemini API, and deployed the system with Vercel and Render.",
-        reflection:
-          "This project helped me understand how frontend, backend, APIs, deployment, and AI interaction connect in a real product.",
-        story: [
-          "The assistant answers questions about my studies, projects, and current direction.",
-          "The website supports English and German content for a Berlin-focused profile.",
-          "The project gave me practical experience with product structure, deployment, API connection, and AI integration.",
-        ],
-      },
-      {
         slug: "operations-intelligence-dashboard",
         title: "Operations Intelligence Dashboard",
         intro:
           "An ERP and Power BI analytics project for a sportswear order-to-cash process.",
         context:
-          "This project simulated a sportswear company selling products across European markets while managing sales, inventory, invoices, and payments.",
+          "This project simulated a sportswear distributor managing sales, inventory, invoices, and payments across European markets. The business problem was limited visibility into stock risk, unpaid invoices, and operational performance.",
         role:
-          "I worked with the order-to-cash process, structured the business data, and designed analytics around revenue, stock risk, cash collection, and replenishment needs.",
+          "I worked with the order-to-cash process, structured the business data, and developed analytics around revenue, inventory, cash collection, product demand, and replenishment risk.",
         reflection:
-          "The project helped me understand how ERP data becomes useful when it is connected to clear management dashboards.",
+          "This project helped me understand how ERP transaction data can support operational and financial decisions when it is presented through clear dashboards.",
         story: [
-          "Runner Pro had the strongest demand but reached low stock, creating a clear reorder risk.",
-          "One unpaid invoice reduced cash collection visibility and showed why finance data matters in operations.",
-          "The dashboard connected sales, inventory, payments, and simple forecast logic into one executive view.",
+          "Runner Pro showed the highest demand but reached a low-stock level, creating a clear reorder risk.",
+          "One unpaid invoice reduced the cash collection rate and highlighted the connection between finance and operations.",
+          "The Power BI dashboard connected sales, inventory, invoices, payments, and simple forecast logic in one management view.",
+        ],
+      },
+      {
+        slug: "football-performance-fan-intelligence",
+        title: "Football Performance & Fan Intelligence",
+        intro:
+          "A football analytics workflow combining Real Madrid match-performance reporting, football text evaluation, and controlled reporting.",
+        context:
+          "Football match statistics, fan reactions, and project findings often exist in separate files. This project explored how these data sources could be organised into a clearer analytics and reporting workflow for a football analyst or media team.",
+        role:
+          "I prepared public La Liga match data with Python, filtered Real Madrid matches, created calculated performance fields, and developed a one-page Power BI dashboard. I also compared text-classification prompts and tested a rule-based reporting workflow with human approval.",
+        reflection:
+          "The project showed me that data quality, clear evaluation, and focused reporting are more important than adding unnecessary technical complexity.",
+        story: [
+          "The dashboard analysed 38 matches, including 26 wins, a 68.4% win rate, 78 goals scored, and a +40 goal difference.",
+          "A more detailed prompt improved topic and intent classification, but sarcasm, neutral language, and mixed meanings remained difficult.",
+          "A small document-retrieval module answered project questions using prepared project documents and was evaluated with 20 test questions.",
         ],
       },
       {
         slug: "coca-cola-dashboard",
-        title: "Coca-Cola Dashboard",
+        title: "Coca-Cola FMCG Dashboard",
         intro:
-          "A Tableau dashboard designed to make business performance easier to read.",
+          "A Tableau dashboard designed to make sales and product performance easier to understand.",
         context:
-          "This project focused on turning business data into a clearer operational dashboard for decision support.",
+          "The project focused on translating business data into a readable operational dashboard for management reporting and decision support.",
         role:
-          "I worked with KPIs, sales views, product performance, and dashboard structure in Tableau.",
+          "I worked with seven business KPIs, sales analysis, product performance, dashboard structure, and visual readability in Tableau.",
         reflection:
-          "It helped me see how good dashboard design can make business information easier to understand and act on.",
+          "This project improved my understanding of KPI selection and how a dashboard should guide the user toward the most important information.",
         story: [
-          "The project made me think about what a manager needs to see first.",
-          "It improved my understanding of KPI selection and dashboard readability.",
-          "It connected data visualization with business decision-making.",
+          "The dashboard was designed around a COO reporting use case.",
+          "Sales and product performance were presented through clear KPI and comparison views.",
+          "The project connected data visualisation with practical management questions.",
         ],
       },
       {
-        slug: "urban-cycle",
-        title: "Urban-Cycle",
+        slug: "ai-portfolio-platform",
+        title: "Personal Portfolio Platform",
         intro:
-          "A circular-economy concept focused on repair, reuse, incentives, and longer product life.",
+          "A multilingual full-stack portfolio built as a personal digital product.",
         context:
-          "Urban-Cycle explored how a business model could support repair, resale, and product reuse.",
+          "I wanted to create more than a static CV website. The goal was to build a clear and interactive platform that presents my studies, projects, and current professional direction.",
         role:
-          "I worked on the business model, pricing logic, user incentives, and presentation structure.",
+          "I built the frontend with Next.js and TypeScript, created a Python FastAPI backend, connected the frontend and backend through API requests, and deployed the system using Vercel and Render.",
         reflection:
-          "This project helped me think more in systems instead of only individual features.",
+          "This project helped me understand how frontend structure, backend APIs, deployment, debugging, and user experience work together.",
         story: [
-          "The concept connected sustainability with practical customer behavior.",
-          "It helped me understand how incentives influence product adoption.",
-          "It strengthened my business model and product-thinking skills.",
+          "The website provides English and German content.",
+          "The portfolio uses reusable components and structured project case-study pages.",
+          "The project gave me practical experience with GitHub, environment variables, API connections, deployment, and debugging.",
         ],
       },
     ],
+
     labels: {
       caseStudy: "Case study",
-      backToWork: "Back to work",
+      backToWork: "Back to projects",
       context: "Context",
       role: "What I worked on",
-      reflection: "What stayed with me",
+      reflection: "What I learned",
       notes: "Project notes",
     },
   },
@@ -82,80 +84,81 @@ export const projectContent = {
   de: {
     projects: [
       {
-        slug: "ai-portfolio-platform",
-        title: "AI Portfolio Plattform",
-        intro:
-          "Ein Full-Stack Portfolio mit AI Assistant, aufgebaut wie ein persönliches digitales Produkt.",
-        context:
-          "Ich wollte, dass mein Portfolio wie ein kleines Produkt funktioniert und nicht nur wie eine statische Lebenslaufseite.",
-        role:
-          "Ich habe das Frontend mit Next.js und TypeScript gebaut, ein FastAPI Backend erstellt, Gemini API verbunden und das System mit Vercel und Render deployed.",
-        reflection:
-          "Dieses Projekt hat mir geholfen zu verstehen, wie Frontend, Backend, APIs, Deployment und AI-Interaktion in einem echten Produkt zusammenarbeiten.",
-        story: [
-          "Der Assistant beantwortet Fragen zu meinem Studium, meinen Projekten und meiner aktuellen Richtung.",
-          "Die Website unterstützt englische und deutsche Inhalte für ein Berlin-orientiertes Profil.",
-          "Das Projekt gab mir praktische Erfahrung mit Produktstruktur, Deployment, API-Verbindung und AI-Integration.",
-        ],
-      },
-      {
         slug: "operations-intelligence-dashboard",
         title: "Operations Intelligence Dashboard",
         intro:
           "Ein ERP- und Power-BI-Analytics-Projekt für einen Sportswear Order-to-Cash Prozess.",
         context:
-          "Dieses Projekt simulierte ein Sportswear-Unternehmen, das Produkte in europäischen Märkten verkauft und Sales, Lagerbestand, Rechnungen und Zahlungen verwaltet.",
+          "Dieses Projekt simulierte einen Sportswear-Distributor, der Verkäufe, Lagerbestände, Rechnungen und Zahlungen in europäischen Märkten verwaltet. Das Business-Problem war die begrenzte Transparenz über Bestandsrisiken, unbezahlte Rechnungen und operative Performance.",
         role:
-          "Ich habe mit dem Order-to-Cash Prozess gearbeitet, Geschäftsdaten strukturiert und Analysen zu Umsatz, Bestandsrisiko, Zahlungseingang und Nachbestellbedarf entwickelt.",
+          "Ich arbeitete mit dem Order-to-Cash Prozess, strukturierte die Geschäftsdaten und entwickelte Analysen zu Umsatz, Lagerbestand, Zahlungseingang, Produktnachfrage und Nachbestellrisiko.",
         reflection:
-          "Das Projekt hat mir gezeigt, wie ERP-Daten nützlich werden, wenn sie mit klaren Management-Dashboards verbunden sind.",
+          "Das Projekt zeigte mir, wie ERP-Transaktionsdaten operative und finanzielle Entscheidungen unterstützen können, wenn sie in klaren Dashboards dargestellt werden.",
         story: [
-          "Runner Pro hatte die stärkste Nachfrage, aber niedrigen Bestand und dadurch ein klares Nachbestellrisiko.",
-          "Eine unbezahlte Rechnung reduzierte die Transparenz im Zahlungseingang und zeigte, warum Finanzdaten in Operations wichtig sind.",
-          "Das Dashboard verband Sales, Inventory, Payments und einfache Forecast-Logik in einer Executive View.",
+          "Runner Pro zeigte die höchste Nachfrage, erreichte jedoch einen niedrigen Bestand und dadurch ein klares Nachbestellrisiko.",
+          "Eine unbezahlte Rechnung reduzierte die Cash Collection Rate und zeigte die Verbindung zwischen Finance und Operations.",
+          "Das Power-BI-Dashboard verband Sales, Inventory, Rechnungen, Zahlungen und einfache Forecast-Logik in einer Management-Ansicht.",
+        ],
+      },
+      {
+        slug: "football-performance-fan-intelligence",
+        title: "Football Performance Analytics & Fan Intelligence",
+        intro:
+          "Ein Football-Analytics-Workflow, der Real-Madrid-Performance-Reporting, Fußball-Textauswertung und kontrolliertes Reporting verbindet.",
+        context:
+          "Fußballstatistiken, Fanreaktionen und Projektergebnisse befinden sich häufig in getrennten Dateien. Dieses Projekt untersuchte, wie diese Datenquellen in einen klareren Analytics- und Reporting-Workflow für Analysten oder Medienteams integriert werden können.",
+        role:
+          "Ich bereitete öffentliche La-Liga-Spieldaten mit Python auf, filterte Real-Madrid-Spiele, erstellte berechnete Performance-Felder und entwickelte ein einseitiges Power-BI-Dashboard. Zusätzlich verglich ich Prompts zur Textklassifikation und testete einen regelbasierten Reporting-Workflow mit menschlicher Freigabe.",
+        reflection:
+          "Das Projekt zeigte mir, dass Datenqualität, klare Evaluation und fokussiertes Reporting wichtiger sind als unnötige technische Komplexität.",
+        story: [
+          "Das Dashboard analysierte 38 Spiele mit 26 Siegen, einer Siegquote von 68,4 %, 78 erzielten Toren und einer Tordifferenz von +40.",
+          "Ein detaillierterer Prompt verbesserte die Topic- und Intent-Klassifikation, aber Sarkasmus, neutrale Sprache und Mehrdeutigkeit blieben schwierig.",
+          "Ein kleines Dokumenten-Retrieval-Modul beantwortete Projektfragen anhand vorbereiteter Dokumente und wurde mit 20 Testfragen evaluiert.",
         ],
       },
       {
         slug: "coca-cola-dashboard",
-        title: "Coca-Cola Dashboard",
+        title: "Coca-Cola FMCG Dashboard",
         intro:
-          "Ein Tableau Dashboard, das Business Performance leichter lesbar macht.",
+          "Ein Tableau Dashboard, das Sales- und Produktperformance verständlicher darstellt.",
         context:
-          "Dieses Projekt konzentrierte sich darauf, Geschäftsdaten in ein klares operatives Dashboard zu übersetzen.",
+          "Das Projekt konzentrierte sich darauf, Geschäftsdaten in ein gut lesbares operatives Dashboard für Management Reporting und Entscheidungsunterstützung zu übersetzen.",
         role:
-          "Ich habe mit KPIs, Sales Views, Produktperformance und Dashboard-Struktur in Tableau gearbeitet.",
+          "Ich arbeitete mit sieben Business KPIs, Sales-Analysen, Produktperformance, Dashboard-Struktur und visueller Lesbarkeit in Tableau.",
         reflection:
-          "Es hat mir gezeigt, wie gutes Dashboard Design Business-Informationen verständlicher und handlungsorientierter machen kann.",
+          "Das Projekt verbesserte mein Verständnis für KPI-Auswahl und dafür, wie ein Dashboard Nutzer zu den wichtigsten Informationen führen sollte.",
         story: [
-          "Das Projekt hat mich darüber nachdenken lassen, was ein Manager zuerst sehen muss.",
-          "Es verbesserte mein Verständnis für KPI-Auswahl und Dashboard-Lesbarkeit.",
-          "Es verband Datenvisualisierung mit Business-Entscheidungen.",
+          "Das Dashboard wurde für einen COO-Reporting-Anwendungsfall entwickelt.",
+          "Sales und Produktperformance wurden durch klare KPI- und Vergleichsansichten dargestellt.",
+          "Das Projekt verband Datenvisualisierung mit praktischen Management-Fragen.",
         ],
       },
       {
-        slug: "urban-cycle",
-        title: "Urban-Cycle",
+        slug: "ai-portfolio-platform",
+        title: "Persönliche Portfolio-Plattform",
         intro:
-          "Ein Circular-Economy-Konzept rund um Reparatur, Wiederverwendung, Anreize und längere Produktlebensdauer.",
+          "Ein mehrsprachiges Full-Stack Portfolio, aufgebaut wie ein persönliches digitales Produkt.",
         context:
-          "Urban-Cycle untersuchte, wie ein Geschäftsmodell Reparatur, Wiederverkauf und Wiederverwendung unterstützen kann.",
+          "Ich wollte mehr als eine statische Lebenslauf-Website entwickeln. Das Ziel war eine klare und interaktive Plattform, die mein Studium, meine Projekte und meine aktuelle berufliche Richtung zeigt.",
         role:
-          "Ich habe am Business Model, der Preislogik, Nutzeranreizen und der Präsentationsstruktur gearbeitet.",
+          "Ich entwickelte das Frontend mit Next.js und TypeScript, erstellte ein Python-FastAPI-Backend, verband Frontend und Backend über API Requests und deployte das System mit Vercel und Render.",
         reflection:
-          "Dieses Projekt hat mir geholfen, stärker in Systemen statt nur in einzelnen Features zu denken.",
+          "Dieses Projekt half mir zu verstehen, wie Frontend-Struktur, Backend APIs, Deployment, Debugging und User Experience zusammenarbeiten.",
         story: [
-          "Das Konzept verband Nachhaltigkeit mit praktischem Kundenverhalten.",
-          "Es half mir zu verstehen, wie Anreize Produktakzeptanz beeinflussen.",
-          "Es stärkte mein Business-Model- und Produktdenken.",
+          "Die Website bietet englische und deutsche Inhalte.",
+          "Das Portfolio verwendet wiederverwendbare Komponenten und strukturierte Projektseiten.",
+          "Das Projekt gab mir praktische Erfahrung mit GitHub, Environment Variables, API-Verbindungen, Deployment und Debugging.",
         ],
       },
     ],
+
     labels: {
       caseStudy: "Case Study",
       backToWork: "Zurück zu den Projekten",
       context: "Kontext",
       role: "Woran ich gearbeitet habe",
-      reflection: "Was mir geblieben ist",
+      reflection: "Was ich gelernt habe",
       notes: "Projektgedanken",
     },
   },
